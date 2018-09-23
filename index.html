@@ -38,10 +38,12 @@
 			      <br>
 			      <a class="btn btn-outline-primary" v-bind:href="lecture.pdf">PDF</a>
 			      <a class="btn btn-outline-success" v-bind:href="lecture.pptx">PPTX</a>
-				<div v-if="lecture.weblinks != 'None'">
-					<div v-for="weblink in lecture.weblinks">
-						<a class="btn btn-outline-secondary" v-bind:href="weblink.url">{{weblink.link}}</a>
-					</div>
+				<div class="btn-group" role="group" aria-label="Links">
+					<template v-if="lecture.weblinks != 'None'">
+						<template v-for="weblink in lecture.weblinks">
+							<a class="btn btn-outline-secondary" v-bind:href="weblink.url">{{weblink.link}}</a>
+						</template>
+					</template>
 				</div>
 			 </div>
 		</div>
