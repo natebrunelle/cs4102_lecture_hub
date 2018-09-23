@@ -22,8 +22,9 @@
 		</div>
 	</div>
 
-	<div style="margin: auto;margin-top:20px" class="justify-content-center col-8 card bg-light" v-for="lecture in filteredList">
+	<div style="margin: auto;margin-top:20px" class="justify-content-center col-8 card bg-light" v-for="(lecture, index) in filteredList">
 		  <div class="card-header">
+                    <h6>Lecture {{index+1}}</h6>
 		    <h4>{{ lecture.title}}</h4> 
 		    <h6 class="card-subtitle mb-2 text-muted">Keywords: {{ lecture.keywords}}</h6>
 		    <h6 class="card-subtitle mb-2 text-muted">Cormen Readings: {{ lecture.readings}}</h6>
