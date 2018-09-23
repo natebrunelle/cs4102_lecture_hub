@@ -22,9 +22,9 @@
 		</div>
 	</div>
 
-	<div style="margin: auto;margin-top:20px" class="justify-content-center col-8 card bg-light" v-for="(lecture, index) in filteredList">
+	<div style="margin: auto;margin-top:20px" class="justify-content-center col-8 card bg-light" v-for="lecture in filteredList">
 		  <div class="card-header">
-                    <h6>Lecture {{index+1}}</h6>
+                    <h6>Lecture {{lecture.index}}</h6>
 		    <h4>{{ lecture.title}}</h4> 
 		    <h6 class="card-subtitle mb-2 text-muted">Keywords: {{ lecture.keywords}}</h6>
 		    <h6 class="card-subtitle mb-2 text-muted">Cormen Readings: {{ lecture.readings}}</h6>
@@ -55,6 +55,8 @@
 
 <script>
 
+   var i = 1
+
    class Weblink{
      constructor(url, link){
      this.url = url;
@@ -72,6 +74,8 @@
      this.pptx = pptx;
      this.readings = readings;
      this.weblinks = weblinks;
+     this.index = i;
+     i += 1;
      } 
    }
    
