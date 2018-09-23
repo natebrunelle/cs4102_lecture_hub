@@ -37,9 +37,9 @@
       </br>
       <a class="btn btn-outline-primary" v-bind:href="lecture.pdf">PDF</a>
       <a class="btn btn-outline-success" v-bind:href="lecture.pptx">PPTX</a>
-      <div v-if="lecture.extras != 'None'">
-	<div v-for="extra in lecture.extras">
-	 <a class="card-link" v-bind:href="lecture.extras">Extras</a> 
+      <div v-if="lecture.weblinks != 'None'">
+	<div v-for="weblink in lecture.weblinks">
+	 <a class="card-link" v-bind:href="weblink.url">{{ weblink.link}}</a> 
       </div>
     </div>
   </div>
@@ -54,8 +54,15 @@
 
 <script>
 
+   class Weblink{
+     constructor(url, link){
+     this.url = url;
+     this.link = link
+     }
+   }
+
    class Lecture{
-     constructor(title, keywords, pubdate, video, pdf, pptx, readings, extras){
+     constructor(title, keywords, pubdate, video, pdf, pptx, readings, weblinks){
      this.title = title;
      this.keywords = keywords;
      this.pubdate = pubdate;
@@ -63,7 +70,7 @@
      this.pdf = pdf;
      this.pptx = pptx;
      this.readings = readings;
-     this.extras = extras;
+     this.weblinks = weblinks;
      } 
    }
    
@@ -148,8 +155,8 @@
 	  'Does not Appear' ,
 
 	[
-	'https://www.ics.uci.edu/~eppstein/161/960125.html',
-	'https://www.ics.uci.edu/~eppstein/161/960130.html'
+        new Weblink('https://www.ics.uci.edu/~eppstein/161/960125.html', 'Quickselect Reading'),
+	new Weblink('https://www.ics.uci.edu/~eppstein/161/960130.html', 'Median of Medians Readin')
 	]
 
 	),
