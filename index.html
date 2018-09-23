@@ -13,38 +13,40 @@
 
 <body>
 <div id="app" class="container-fluid">
-<div class="jumbotron">
-  <h1 class="display-4">CS4102 Lecture Material Hub</h1>
-  <p class="lead">A collection of lecture videos from Fall 2018.</p>
-  <hr class="my-4">
-<div class="search-wrapper">
-    <input type="text" v-model="search" placeholder="Search by title or keywords"/>
-</div>
-</div>
+	<div class="jumbotron">
+	  <h1 class="display-4">CS4102 Lecture Material Hub</h1>
+	  <p class="lead">A collection of lecture videos from Fall 2018.</p>
+	  <hr class="my-4">
+		<div class="search-wrapper">
+		    <input type="text" v-model="search" placeholder="Search by title or keywords"/>
+		</div>
+	</div>
 
-<div style="margin: auto;margin-top:20px" class="justify-content-center col-8 card bg-light" v-for="lecture in filteredList">
-  <div class="card-header">
-    <h4>{{ lecture.title}}</h4> 
-    <h6 class="card-subtitle mb-2 text-muted">Keywords: {{ lecture.keywords}}</h6>
-    <h6 class="card-subtitle mb-2 text-muted">Cormen Readings: {{ lecture.readings}}</h6>
-  </div>
-  <div class="card-body">
-    <div class="card-text">
+	<div style="margin: auto;margin-top:20px" class="justify-content-center col-8 card bg-light" v-for="lecture in filteredList">
+		  <div class="card-header">
+		    <h4>{{ lecture.title}}</h4> 
+		    <h6 class="card-subtitle mb-2 text-muted">Keywords: {{ lecture.keywords}}</h6>
+		    <h6 class="card-subtitle mb-2 text-muted">Cormen Readings: {{ lecture.readings}}</h6>
+		  </div>
+		<div class="card-body">
+			<div class="card-text">
 
-      <div v-if="lecture.video != 'None'">
-      <iframe class="col-lg-12 col-md-12 col-sm-12" width="400" height="400" v-bind:src="lecture.video"> </iframe>
-      </div>
-      </br>
-      <a class="btn btn-outline-primary" v-bind:href="lecture.pdf">PDF</a>
-      <a class="btn btn-outline-success" v-bind:href="lecture.pptx">PPTX</a>
-      <div v-if="lecture.weblinks != 'None'">
-	<div v-for="weblink in lecture.weblinks">
-	 <a class="btn btn-outline-secondary" v-bind:href="weblink.url">{{ weblink.link}}</a> 
-      </div>
-    </div>
-  </div>
-  </div>
-</div>
+				<div v-if="lecture.video != 'None'">
+					<iframe class="col-lg-12 col-md-12 col-sm-12" width="400" height="400" v-bind:src="lecture.video"> </iframe>
+				</div>
+			      <br>
+			      <a class="btn btn-outline-primary" v-bind:href="lecture.pdf">PDF</a>
+			      <a class="btn btn-outline-success" v-bind:href="lecture.pptx">PPTX</a>
+				<template v-if="lecture.weblinks != 'None'">
+					<template v-for="weblink in lecture.weblinks">
+
+						<a class="btn btn-outline-secondary" v-bind:href="weblink.url">{{weblink.link}}</a>
+
+					</template>
+				</template>
+			 </div>
+		</div>
+	</div>
 
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -151,14 +153,14 @@
           'Quickselect and Median-of-Medians',
 	  'Divide and Conquer, Sorting, Quicksort, Median, Order Statistic, Quickselect, Median of Medians',
           'Thursday, September 20',
-	  'None', 
+	  'https://uva.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=51b730b1-971e-4857-9f44-a96101299a43&v=1', 
 	  'http://www.cs.virginia.edu/~njb2b/cs4102/hub/slides/cs4102_L8_quickselectMedianofMedians.pdf',
 	  'http://www.cs.virginia.edu/~njb2b/cs4102/hub/slides/cs4102_L8_quickselectMedianofMedians.pptx',
 	  'Does not Appear' ,
 
 	[
-        new Weblink('https://www.ics.uci.edu/~eppstein/161/960125.html', 'Quickselect Reading'),
-	new Weblink('https://www.ics.uci.edu/~eppstein/161/960130.html', 'Median of Medians Reading')
+        new Weblink('https://www.ics.uci.edu/~eppstein/161/960125.html', 'Quickselect'),
+	new Weblink('https://www.ics.uci.edu/~eppstein/161/960130.html', 'Median of Medians')
 	]
 
 	),
