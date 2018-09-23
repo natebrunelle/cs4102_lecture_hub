@@ -39,7 +39,7 @@
       <a class="btn btn-outline-success" v-bind:href="lecture.pptx">PPTX</a>
       <div v-if="lecture.weblinks != 'None'">
 	<div v-for="weblink in lecture.weblinks">
-	 <a class="card-link" v-bind:href="weblink.url">{{ weblink.link}}</a> 
+	 <a class="btn btn-outline-secondary" v-bind:href="weblink.url">{{ weblink.link}}</a> 
       </div>
     </div>
   </div>
@@ -109,7 +109,9 @@
 	  'http://www.cs.virginia.edu/~njb2b/cs4102/hub/slides/cs4102_L4_G&C_Master.pdf',
 	  'http://www.cs.virginia.edu/~njb2b/cs4102/hub/slides/cs4102_L4_G&C_Master.pptx',
 	  'Chapter 4, Divide and Conquer (4.3 The substitution method for solving recurrences)' ,
-	  'None'
+	  [
+          new Weblink('http://www.cs.virginia.edu/~njb2b/cs4102/hub/supplement/cs4102_recurrence_proofs.pdf', 'Recurrence Solutions')
+          ]
 
 	),
       new Lecture(
@@ -156,7 +158,7 @@
 
 	[
         new Weblink('https://www.ics.uci.edu/~eppstein/161/960125.html', 'Quickselect Reading'),
-	new Weblink('https://www.ics.uci.edu/~eppstein/161/960130.html', 'Median of Medians Readin')
+	new Weblink('https://www.ics.uci.edu/~eppstein/161/960130.html', 'Median of Medians Reading')
 	]
 
 	),
