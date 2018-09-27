@@ -87,9 +87,19 @@ lecture:
 lecture:
 	title: Sorting Algorithms and Their Properties
 	date: Thursday September 28
-	keywords: Sorting, Quicksort, Sorting Algorithm Properties, Insertionsort, bubblesort, heapsort
+	keywords: Sorting, Quicksort, Sorting Algorithm Properties, Insertionsort, Bubblesort, Heapsort
 	reading: Part II Sorting and Order Statistics (Introduction); Chapter 6, Heapsort (all)
 	slides: cs4102_L10_variousSorts
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -135,12 +145,9 @@ lecture:
 	title: Disjkstra's Algorithm
 	date: Thursday November 8
 
-
-
 lecture: 
 	title: Bellman-Ford
 	date: Tuesday November 13
-
 
 lecture: 
 	title: Max Flow, Min Cut
