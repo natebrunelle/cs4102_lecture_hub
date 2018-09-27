@@ -61,32 +61,28 @@ lecture:
 	reading: Chapter 4, Divide-and-Conquer (4.2 Strassen's algorithm for matrix multiplication); Chapter 7, Quicksort (7.1 Description of Quicksort)
 
 
+lecture:
+	title: Quickselect and Median-of-Medians
+	keywords: Divide and Conquer, Sorting, Quicksort, Median, Order Statistic, Quickselect, Median of Medians
+	date: Thursday September 20
+	pm_video: 51b730b1-971e-4857-9f44-a96101299a43&v=1
+	am_video: d1cf83da-a39b-4824-b309-a9610108567a&v=1
+	slides: cs4102_L8_quickselectMedianofMedians
+	reading: Chapter 9, Medians and Order Statistics (all)
+	weblink: Quickselect
+		url: https://www.ics.uci.edu/~eppstein/161/960125.html
+	weblink: Median of Medians
+		url: https://www.ics.uci.edu/~eppstein/161/960130.html
+
+
+
+lecture:
+	title: Randomized Quicksort, Sorting Lower Bound
+	keywords: Divide and Conquer, Sorting, Quicksort, Decision Tree, Worse Case Lower Bound
+	date: Tuesday September 25
+	slides: cs4102_L9_randquicksort.pdf
+	reading: Chapter 7, Quicksort (7.3 A randomized version of quicksort, 7.4 Analysis of quicksort); Chapter 8, Sorting in Linear Time (8.1 Lower bounds for sorting)
+
 CURRENT
 ###############
-
-
-      new Lecture(
-          'Quickselect and Median-of-Medians',
-	  'Divide and Conquer, Sorting, Quicksort, Median, Order Statistic, Quickselect, Median of Medians',
-          'Thursday September 20',
-	  ['https://uva.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=51b730b1-971e-4857-9f44-a96101299a43&v=1',  'https://uva.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=d1cf83da-a39b-4824-b309-a9610108567a&v=1'],
-	  'http://www.cs.virginia.edu/~njb2b/cs4102/hub/slides/cs4102_L8_quickselectMedianofMedians.pdf',
-	  'http://www.cs.virginia.edu/~njb2b/cs4102/hub/slides/cs4102_L8_quickselectMedianofMedians.pptx',
-	  'Chapter 9, Medians and Order Statistics (all)' ,
-	[
-        new Weblink('https://www.ics.uci.edu/~eppstein/161/960125.html', 'Quickselect'),
-	new Weblink('https://www.ics.uci.edu/~eppstein/161/960130.html', 'Median of Medians')
-	]
-	),
-
-      new Lecture(
-          'Randomized Quicksort, Sorting Lower Bound',
-	  'Divide and Conquer, Sorting, Quicksort, Decision Tree, Worse Case Lower Bound',
-          'Tuesday September 25',
-	  ['None', 'None'],
-	  'http://www.cs.virginia.edu/~njb2b/cs4102/hub/slides/cs4102_L9_randquicksort.pdf',
-	  'http://www.cs.virginia.edu/~njb2b/cs4102/hub/slides/cs4102_L9_randquicksort.pptx',
-	  'Chapter 7, Quicksort (7.3 A randomized version of quicksort, 7.4 Analysis of quicksort); Chapter 8, Sorting in Linear Time (8.1 Lower bounds for sorting)' ,
-	  'None'
-	),
 
