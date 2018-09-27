@@ -1,0 +1,146 @@
+lecture:
+	title: Welcome
+	date: Tuesday August 28
+	slides: cs4102_L1_intro
+	am_video: 7567b2f3-860f-439e-9244-a94a00ddbabf&v=1
+	pm_video: 5e4bffbd-f5d0-446f-8cf3-a94a0128d1b6&v=1
+
+lecture:
+	title: Divide and Conquer
+	date: Thursday August 30
+	reading: Chapter 3, Growth of Functions (All); Chapter 4, Divide-and-Conquer (Intro)
+	keywords: Recurrences, Asymptotic Notation, Divide and Conquer, Trominos
+	slides: cs4102_L2_recurrences_DandC
+	am_video: d54cb030-66ac-482d-b7e7-a94c0128698b&v=1
+	pm_video: de828fd8-8eec-4c72-a653-a94c00de838f&v=1
+
+lecture:
+	title: Karatsuba & Tree Method
+	date: Tuesday September 4
+	reading: Chapter 4, Divide-and-Conquer (4.4 The recursion-tree method for solving recurrences)
+	keywords: Divide and Conquer, Recurrences, Merge Sort, Karatsuba, Tree Method
+	slides: cs4102_L3_karatsuba_G&C
+	pm_video: 932d99e3-b784-4dbf-acf7-a95101286b2d&v=1
+	am_video: 1fe30f60-384d-43ea-a893-a95100de8789&v=1
+
+lecture:
+	title: Guess and Check
+	date: Thursday September 6
+	reading: Chapter 4, Divide and Conquer (4.3 The substitution method for solving recurrences)
+	keywords: Karatsuba, Guess and Check Method, Induction
+	slides: cs4102_L4_G&C_Master
+	pm_video: 88d5ff85-f412-48be-a9b7-a95301286766&v=1
+	am_video: dc06d489-ba7d-4349-80bd-a95300df8dd2&v=1
+	weblink: Recurrence Solutions
+		url: http://www.cs.virginia.edu/~njb2b/cs4102/hub/supplement/cs4102_recurrence_proofs.pdf
+
+lecture:
+	title: Master Theorem, Substitution
+	date: Tuesday September 11
+	reading: Chapter 4, Divide and Conquer (4.3 The substitution method for solving recurrences)
+	keywords: Recurrence Relations, Cookbook Method, Master Theorem, Subsitution Method
+	slides: cs4102_L5_Master
+	pm_video: f21d6171-96e6-4431-b9df-a95801283cf7&v=1
+	am_video: b2a00765-3712-4185-8c90-a961010848e0&v=1
+
+lecture:
+	title: Closest Pair of Points
+	keywords: Divide and Conquer, Closest Pair of Points
+	date: Thursday September 13
+	pm_video: 46271d1f-3516-4fb2-8c81-a95a012812d3&v=1
+	slides: cs4102_L6_sub_closestpair
+	reading: Chapter 33, Computational Geometry (33.4 Finding the closest pair of points)
+
+lecture:
+	title: Strassen's Algorithm and Quicksort
+	keywords: Divide and Conquer, Matrix Multiplication, Strassen's Algorithm, Sorting, Quicksort
+	date: Tuesday September 18
+	pm_video: e6e280c6-00e8-4bbb-be90-a95f0128dc86&v=1
+	am_video: 057422ad-162e-4888-b240-a961010850d8&v=1
+	slides: cs4102_L7_strassenquicksort
+	reading: Chapter 4, Divide-and-Conquer (4.2 Strassen's algorithm for matrix multiplication); Chapter 7, Quicksort (7.1 Description of Quicksort)
+
+
+lecture:
+	title: Quickselect and Median-of-Medians
+	keywords: Divide and Conquer, Sorting, Quicksort, Median, Order Statistic, Quickselect, Median of Medians
+	date: Thursday September 20
+	pm_video: 51b730b1-971e-4857-9f44-a96101299a43&v=1
+	am_video: d1cf83da-a39b-4824-b309-a9610108567a&v=1
+	slides: cs4102_L8_quickselectMedianofMedians
+	reading: Chapter 9, Medians and Order Statistics (all)
+	weblink: Quickselect
+		url: https://www.ics.uci.edu/~eppstein/161/960125.html
+	weblink: Median of Medians
+		url: https://www.ics.uci.edu/~eppstein/161/960130.html
+
+
+
+lecture:
+	title: Randomized Quicksort, Sorting Lower Bound
+	keywords: Divide and Conquer, Sorting, Quicksort, Decision Tree, Worse Case Lower Bound
+	date: Tuesday September 25
+	slides: cs4102_L9_randquicksort.pdf
+	reading: Chapter 7, Quicksort (7.3 A randomized version of quicksort, 7.4 Analysis of quicksort); Chapter 8, Sorting in Linear Time (8.1 Lower bounds for sorting)
+	pm_video: 0ca91657-4a50-47bc-9acd-a9660128813f
+
+CURRENT
+###############
+
+
+lecture:
+	title: Sorting Algorithms and Their Properties
+	date: Thursday September 28
+
+
+lecture:
+	title: Linear Time Sorting
+	date: Tuesday October 2
+
+lecture:
+	title: Dynamic Programming
+	date: Thursday October 4
+
+
+lecture:
+	title: Matrix Chain Multiplication, Longest Common Subsequence
+	date: Thursday October 11
+
+lecture:
+	title: Seam Carving
+	date: Thursday October 18
+
+lecture:
+	title: Gerrymandering
+	date: Tuesday October 23
+
+lecture:
+	Greedy Algorithms, Interval Scheduling
+	date: Thursday October 25
+
+lecture:
+	title: Huffman Coding
+	date: Thursday November 1
+
+lecture:
+	title: Graphs, Minimum Spanning Trees
+	date: Tuesday November 6
+
+lecture:
+	title: Disjkstra's Algorithm
+	date: Thursday November 8
+
+
+
+lecture:
+	title: Bellman-Ford
+	date: Tuesday November 13
+
+
+lecture: 
+	title: Max Flow, Min Cut
+	date: Thursday November 15
+
+
+
+

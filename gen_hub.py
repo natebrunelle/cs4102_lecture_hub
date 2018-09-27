@@ -54,7 +54,6 @@ def createlecture(lecture):
 	lecturestr += "), \n"
 	return lecturestr
 
-	
 
 hub = open("index_test.html", 'w')
 hubhead = open("hubhead", 'r')
@@ -89,5 +88,4 @@ hub.write(createlecture(currlecture))
 
 for line in hubtail.readlines():
 	hub.write(line)
-
 
