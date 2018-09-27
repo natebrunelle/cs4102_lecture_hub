@@ -86,3 +86,60 @@ lecture:
 CURRENT
 ###############
 
+
+lecture:
+	title: Sorting Algorithms and Their Properties
+	date: Thursday September 28
+
+
+lecture:
+	title: Linear Time Sorting
+	date: Tuesday October 2
+
+lecture:
+	title: Dynamic Programming
+	date: Thursday October 4
+
+
+lecture:
+	title: Matrix Chain Multiplication, Longest Common Subsequence
+	date: Thursday October 11
+
+lecture:
+	title: Seam Carving
+	date: Thursday October 18
+
+lecture:
+	title: Gerrymandering
+	date: Tuesday October 23
+
+lecture:
+	Greedy Algorithms, Interval Scheduling
+	date: Thursday October 25
+
+lecture:
+	title: Huffman Coding
+	date: Thursday November 1
+
+lecture:
+	title: Graphs, Minimum Spanning Trees
+	date: Tuesday November 6
+
+lecture:
+	title: Disjkstra's Algorithm
+	date: Thursday November 8
+
+
+
+lecture:
+	title: Bellman-Ford
+	date: Tuesday November 13
+
+
+lecture: 
+	title: Max Flow, Min Cut
+	date: Thursday November 15
+
+
+
+
