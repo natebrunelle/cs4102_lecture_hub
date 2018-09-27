@@ -69,8 +69,12 @@
 
 
 			      <br>
+			      <template v-if="lecture.pdf != 'None'">
 			      <a class="btn btn-outline-primary" v-bind:href="lecture.pdf">PDF</a>
+			      </template>
+			      <template v-if="lecture.pptx != 'None'">
 			      <a class="btn btn-outline-success" v-bind:href="lecture.pptx">PPTX</a>
+			      </template>
 				<div class="btn-group" role="group" aria-label="Links">
 					<template v-if="lecture.weblinks != 'None'">
 						<template v-for="weblink in lecture.weblinks">
