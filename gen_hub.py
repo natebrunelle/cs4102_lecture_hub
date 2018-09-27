@@ -27,14 +27,19 @@ def sanitize_str(string):
 def sanitize_lecture(lecture):
 	return {k: sanitize_str(v) for k, v in lecture.items()}
 
+def gen_video_link(video_id):
+	if video_id != 'None':
+		return 'https://uva.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=' + video_id
+	return video_id
+
 def createlecture(lecture):
 	lecture = sanitize_lecture(lecture)
 	lecturestr = 'new Lecture(\n' #intro
 	lecturestr += "'"+lecture['title'] + "', \n" #title
 	lecturestr += "'" + lecture['keywords'] + "', \n" #keywords
 	lecturestr += "'" + lecture['date'] + "', \n" #pubdate
-	lecturestr += "['https://uva.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=" + lecture['pm_video'] + "', \n" #pm video
-	lecturestr += "'https://uva.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=" + lecture['am_video'] + "'], \n" #am video
+	lecturestr += "['" + gen_video_link(lecture['pm_video']) + "', \n" #pm video
+	lecturestr += "'" + gen_video_link(lecture['am_video']) + "'], \n" #am video
 	lecturestr += "'http://www.cs.virginia.edu/~njb2b/cs4102/hub/slides/" + lecture['slides'] + ".pdf', \n" #pdf
 	lecturestr += "'http://www.cs.virginia.edu/~njb2b/cs4102/hub/slides/" + lecture['slides'] + ".pptx', \n" #pptx
 	lecturestr += "'" + lecture['reading'] + "', \n" #readings
