@@ -43,33 +43,27 @@ lecture:
 	pm_video: f21d6171-96e6-4431-b9df-a95801283cf7&v=1
 	am_video: b2a00765-3712-4185-8c90-a961010848e0&v=1
 
+lecture:
+	title: Closest Pair of Points
+	keywords: Divide and Conquer, Closest Pair of Points
+	date: Thursday September 13
+	pm_video: 46271d1f-3516-4fb2-8c81-a95a012812d3&v=1
+	slides: cs4102_L6_sub_closestpair
+	reading: Chapter 33, Computational Geometry (33.4 Finding the closest pair of points)
 
+lecture:
+	title: Strassen's Algorithm and Quicksort
+	keywords: Divide and Conquer, Matrix Multiplication, Strassen's Algorithm, Sorting, Quicksort
+	date: Tuesday September 18
+	pm_video: e6e280c6-00e8-4bbb-be90-a95f0128dc86&v=1
+	am_video: 057422ad-162e-4888-b240-a961010850d8&v=1
+	slides: cs4102_L7_strassenquicksort
+	reading: Chapter 4, Divide-and-Conquer (4.2 Strassen's algorithm for matrix multiplication); Chapter 7, Quicksort (7.1 Description of Quicksort)
 
 
 CURRENT
+###############
 
-
-      new Lecture(
-          'Closest Pair of Points',
-	  'Divide and Conquer, Closest Pair of Points',
-          'Thursday September 13',
-	  ['https://uva.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=46271d1f-3516-4fb2-8c81-a95a012812d3&v=1', 'None'],
-	  'http://www.cs.virginia.edu/~njb2b/cs4102/hub/slides/cs4102_L6_sub_closestpair.pdf',
-	  'http://www.cs.virginia.edu/~njb2b/cs4102/hub/slides/cs4102_L6_sub_closestpair.pptx',
-	  'Chapter 33, Computational Geometry (33.4 Finding the closest pair of points)' ,
-	  'None'
-	),
-
-      new Lecture(
-          'Strassen\'s Algorithm and Quicksort',
-	  'Divide and Conquer, Matrix Multiplication, Strassen\'s Algorithm, Sorting, Quicksort',
-          'Tuesday September 18',
-	  ['https://uva.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=e6e280c6-00e8-4bbb-be90-a95f0128dc86&v=1', 'https://uva.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=057422ad-162e-4888-b240-a961010850d8&v=1'],
-	  'http://www.cs.virginia.edu/~njb2b/cs4102/hub/slides/cs4102_L7_strassenquicksort.pdf',
-	  'http://www.cs.virginia.edu/~njb2b/cs4102/hub/slides/cs4102_L7_strassenquicksort.pptx',
-	  'Chapter 4, Divide-and-Conquer (4.2 Strassen\'s algorithm for matrix multiplication); Chapter 7, Quicksort (7.1 Description of Quicksort)' ,
-	  'None'
-	),
 
       new Lecture(
           'Quickselect and Median-of-Medians',
