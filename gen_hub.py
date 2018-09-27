@@ -1,9 +1,9 @@
 def fresh_lecture():
 	return {
-		'title': 'None',
-		'date': 'None',
-		'reading': 'None',
-		'keywords': 'None',
+		'title': 'TBA',
+		'date': 'TBA',
+		'reading': 'TBA',
+		'keywords': 'TBA',
 		'slides': 'None',
 		'pm_video': 'None',
 		'am_video': 'None',
@@ -32,6 +32,16 @@ def gen_video_link(video_id):
 		return 'https://uva.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=' + video_id
 	return video_id
 
+def gen_slides_pdf(name):
+	if name.strip() != 'None':
+		return "'http://www.cs.virginia.edu/~njb2b/cs4102/hub/slides/" + name + ".pdf'"
+	return "'None'"
+
+def gen_slides_pptx(name):
+	if name.strip() != 'None':
+		return "'http://www.cs.virginia.edu/~njb2b/cs4102/hub/slides/" + name + ".pptx'"
+	return "'None'"
+
 def createlecture(lecture):
 	lecture = sanitize_lecture(lecture)
 	lecturestr = 'new Lecture(\n' #intro
@@ -40,8 +50,8 @@ def createlecture(lecture):
 	lecturestr += "'" + lecture['date'] + "', \n" #pubdate
 	lecturestr += "['" + gen_video_link(lecture['pm_video']) + "', \n" #pm video
 	lecturestr += "'" + gen_video_link(lecture['am_video']) + "'], \n" #am video
-	lecturestr += "'http://www.cs.virginia.edu/~njb2b/cs4102/hub/slides/" + lecture['slides'] + ".pdf', \n" #pdf
-	lecturestr += "'http://www.cs.virginia.edu/~njb2b/cs4102/hub/slides/" + lecture['slides'] + ".pptx', \n" #pptx
+	lecturestr += gen_slides_pdf(lecture['slides']) + ", \n" #pdf
+	lecturestr += gen_slides_pptx(lecture['slides']) + ", \n" #pptx
 	lecturestr += "'" + lecture['reading'] + "', \n" #readings
 	if lecture['weblinks'] != 'None':
 		lecturestr += "[\n "
@@ -55,7 +65,7 @@ def createlecture(lecture):
 	return lecturestr
 
 
-hub = open("index_test.html", 'w')
+hub = open("index.html", 'w')
 hubhead = open("hubhead", 'r')
 hubtail = open("hubtail", 'r')
 lecture_list = open("lecture_list.txt", 'r')

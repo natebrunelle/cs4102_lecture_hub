@@ -69,8 +69,12 @@
 
 
 			      <br>
+			      <template v-if="lecture.pdf != 'None'">
 			      <a class="btn btn-outline-primary" v-bind:href="lecture.pdf">PDF</a>
+			      </template>
+			      <template v-if="lecture.pptx != 'None'">
 			      <a class="btn btn-outline-success" v-bind:href="lecture.pptx">PPTX</a>
+			      </template>
 				<div class="btn-group" role="group" aria-label="Links">
 					<template v-if="lecture.weblinks != 'None'">
 						<template v-for="weblink in lecture.weblinks">
@@ -218,8 +222,8 @@ new Lecture(
 'Tuesday September 25', 
 ['https://uva.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=0ca91657-4a50-47bc-9acd-a9660128813f', 
 'None'], 
-'http://www.cs.virginia.edu/~njb2b/cs4102/hub/slides/cs4102_L9_randquicksort.pdf.pdf', 
-'http://www.cs.virginia.edu/~njb2b/cs4102/hub/slides/cs4102_L9_randquicksort.pdf.pptx', 
+'http://www.cs.virginia.edu/~njb2b/cs4102/hub/slides/cs4102_L9_randquicksort.pdf', 
+'http://www.cs.virginia.edu/~njb2b/cs4102/hub/slides/cs4102_L9_randquicksort.pptx', 
 'Chapter 7, Quicksort (7.3 A randomized version of quicksort, 7.4 Analysis of quicksort); Chapter 8, Sorting in Linear Time (8.1 Lower bounds for sorting)', 
 'None'
 ), 
@@ -231,7 +235,150 @@ new Lecture(
 'None'], 
 'http://www.cs.virginia.edu/~njb2b/cs4102/hub/slides/cs4102_L10_variousSorts.pdf', 
 'http://www.cs.virginia.edu/~njb2b/cs4102/hub/slides/cs4102_L10_variousSorts.pptx', 
-'Chapter 8', 
+'Part II Sorting and Order Statistics (Introduction); Chapter 6, Heapsort (all)', 
+'None'
+), 
+new Lecture(
+'Linear Time Sorting', 
+'TBA', 
+'Tuesday October 2', 
+['None', 
+'None'], 
+'None', 
+'None', 
+'TBA', 
+'None'
+), 
+new Lecture(
+'Dynamic Programming', 
+'TBA', 
+'Thursday October 4', 
+['None', 
+'None'], 
+'None', 
+'None', 
+'TBA', 
+'None'
+), 
+new Lecture(
+'Matrix Chain Multiplication, Longest Common Subsequence', 
+'TBA', 
+'Thursday October 11', 
+['None', 
+'None'], 
+'None', 
+'None', 
+'TBA', 
+'None'
+), 
+new Lecture(
+'Midterm Exam', 
+'TBA', 
+'Thursday October 16', 
+['None', 
+'None'], 
+'None', 
+'None', 
+'TBA', 
+'None'
+), 
+new Lecture(
+'Seam Carving', 
+'TBA', 
+'Thursday October 18', 
+['None', 
+'None'], 
+'None', 
+'None', 
+'TBA', 
+'None'
+), 
+new Lecture(
+'Gerrymandering', 
+'TBA', 
+'Tuesday October 23', 
+['None', 
+'None'], 
+'None', 
+'None', 
+'TBA', 
+'None'
+), 
+new Lecture(
+'Greedy Algorithms, Interval Scheduling', 
+'TBA', 
+'Thursday October 25', 
+['None', 
+'None'], 
+'None', 
+'None', 
+'TBA', 
+'None'
+), 
+new Lecture(
+'Huffman Coding', 
+'TBA', 
+'Thursday November 1', 
+['None', 
+'None'], 
+'None', 
+'None', 
+'TBA', 
+'None'
+), 
+new Lecture(
+'Graphs, Minimum Spanning Trees', 
+'TBA', 
+'Tuesday November 6', 
+['None', 
+'None'], 
+'None', 
+'None', 
+'TBA', 
+'None'
+), 
+new Lecture(
+'Disjkstra\'s Algorithm', 
+'TBA', 
+'Thursday November 8', 
+['None', 
+'None'], 
+'None', 
+'None', 
+'TBA', 
+'None'
+), 
+new Lecture(
+'Bellman-Ford', 
+'TBA', 
+'Tuesday November 13', 
+['None', 
+'None'], 
+'None', 
+'None', 
+'TBA', 
+'None'
+), 
+new Lecture(
+'Max Flow, Min Cut', 
+'TBA', 
+'Thursday November 15', 
+['None', 
+'None'], 
+'None', 
+'None', 
+'TBA', 
+'None'
+), 
+new Lecture(
+'TBA', 
+'TBA', 
+'Tuesday November 20', 
+['None', 
+'None'], 
+'None', 
+'None', 
+'TBA', 
 'None'
 ), 
 

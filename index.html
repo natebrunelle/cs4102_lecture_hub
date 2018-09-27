@@ -69,8 +69,12 @@
 
 
 			      <br>
+			      <template v-if="lecture.pdf != 'None'">
 			      <a class="btn btn-outline-primary" v-bind:href="lecture.pdf">PDF</a>
+			      </template>
+			      <template v-if="lecture.pptx != 'None'">
 			      <a class="btn btn-outline-success" v-bind:href="lecture.pptx">PPTX</a>
+			      </template>
 				<div class="btn-group" role="group" aria-label="Links">
 					<template v-if="lecture.weblinks != 'None'">
 						<template v-for="weblink in lecture.weblinks">
@@ -119,112 +123,264 @@
    data: {
      search:  "" ,
      lectures : [ 
-//STARTSTARTSTART
-  	new Lecture(
-          'Welcome',
-	  'None',
-	  'Tuesday August 28',
-	  ['https://uva.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=5e4bffbd-f5d0-446f-8cf3-a94a0128d1b6&v=1', 'https://uva.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=7567b2f3-860f-439e-9244-a94a00ddbabf&v=1'],
-	  'http://www.cs.virginia.edu/~njb2b/cs4102/hub/slides/cs4102_L1_intro.pdf',
-	  'http://www.cs.virginia.edu/~njb2b/cs4102/hub/slides/cs4102_L1_intro.pptx',
-	  'None',
-	  'None'
-	),
 
-     	new Lecture(
-          'Divide and Conquer',
-	  'Recurrences, Asymptotic Notation, Divide and Conquer, Trominos',
-          'Thursday August 30',
-	  ['https://uva.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=d54cb030-66ac-482d-b7e7-a94c0128698b&v=1', 'https://uva.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=de828fd8-8eec-4c72-a653-a94c00de838f&v=1'],
-	  'http://www.cs.virginia.edu/~njb2b/cs4102/hub/slides/cs4102_L2_recurrences_DandC.pdf',
-	  'http://www.cs.virginia.edu/~njb2b/cs4102/hub/slides/cs4102_L2_recurrences_DandC.pptx',
-	  'Chapter 3, Growth of Functions (All); Chapter 4, Divide-and-Conquer (Intro)' ,
-	  'None'
-	),
-
-       new Lecture(
-	  'Karatsuba & Tree Method',
-          'Divide and Conquer, Recurrences, Merge Sort, Karatsuba, Tree Method',
-          'Tuesday September 4',
-          ['https://uva.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=932d99e3-b784-4dbf-acf7-a95101286b2d&v=1', 'https://uva.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=1fe30f60-384d-43ea-a893-a95100de8789&v=1'],
-          'http://www.cs.virginia.edu/~njb2b/cs4102/hub/slides/cs4102_L3_karatsuba_G&C.pdf',
-	  'http://www.cs.virginia.edu/~njb2b/cs4102/hub/slides/cs4102_L3_karatsuba_G&C.pptx',
-          'Chapter 4, Divide-and-Conquer (4.4 The recursion-tree method for solving recurrences)',
-          'None'
-       ),
-
-       new Lecture(
-          'Guess and Check',
-	  'Karatsuba, Guess and Check Method, Induction',
-          'Thursday September 6',
-	  ['https://uva.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=88d5ff85-f412-48be-a9b7-a95301286766&v=1', 'https://uva.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=dc06d489-ba7d-4349-80bd-a95300df8dd2&v=1'],
-	  'http://www.cs.virginia.edu/~njb2b/cs4102/hub/slides/cs4102_L4_G&C_Master.pdf',
-	  'http://www.cs.virginia.edu/~njb2b/cs4102/hub/slides/cs4102_L4_G&C_Master.pptx',
-	  'Chapter 4, Divide and Conquer (4.3 The substitution method for solving recurrences)' ,
-	  [
-          new Weblink('http://www.cs.virginia.edu/~njb2b/cs4102/hub/supplement/cs4102_recurrence_proofs.pdf', 'Recurrence Solutions')
-          ]
-	),
-
-      new Lecture(
-          'Master Theorem, Substitution',
-	  'Recurrence Relations, Cookbook Method, Master Theorem, Subsitution Method',
-          'Tuesday September 11',
-	  ['https://uva.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=f21d6171-96e6-4431-b9df-a95801283cf7&v=1', 'https://uva.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=b2a00765-3712-4185-8c90-a961010848e0&v=1'],
-	  'http://www.cs.virginia.edu/~njb2b/cs4102/hub/slides/cs4102_L5_Master.pdf',
-	  'http://www.cs.virginia.edu/~njb2b/cs4102/hub/slides/cs4102_L5_Master.pptx',
-	  'Chapter 4, Divide and Conquer (4.3 The substitution method for solving recurrences)' ,
-	  'None'
-	),
-
-      new Lecture(
-          'Closest Pair of Points',
-	  'Divide and Conquer, Closest Pair of Points',
-          'Thursday September 13',
-	  ['https://uva.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=46271d1f-3516-4fb2-8c81-a95a012812d3&v=1', 'None'],
-	  'http://www.cs.virginia.edu/~njb2b/cs4102/hub/slides/cs4102_L6_sub_closestpair.pdf',
-	  'http://www.cs.virginia.edu/~njb2b/cs4102/hub/slides/cs4102_L6_sub_closestpair.pptx',
-	  'Chapter 33, Computational Geometry (33.4 Finding the closest pair of points)' ,
-	  'None'
-	),
-
-      new Lecture(
-          'Strassen\'s Algorithm and Quicksort',
-	  'Divide and Conquer, Matrix Multiplication, Strassen\'s Algorithm, Sorting, Quicksort',
-          'Tuesday September 18',
-	  ['https://uva.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=e6e280c6-00e8-4bbb-be90-a95f0128dc86&v=1', 'https://uva.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=057422ad-162e-4888-b240-a961010850d8&v=1'],
-	  'http://www.cs.virginia.edu/~njb2b/cs4102/hub/slides/cs4102_L7_strassenquicksort.pdf',
-	  'http://www.cs.virginia.edu/~njb2b/cs4102/hub/slides/cs4102_L7_strassenquicksort.pptx',
-	  'Chapter 4, Divide-and-Conquer (4.2 Strassen\'s algorithm for matrix multiplication); Chapter 7, Quicksort (7.1 Description of Quicksort)' ,
-	  'None'
-	),
-
-      new Lecture(
-          'Quickselect and Median-of-Medians',
-	  'Divide and Conquer, Sorting, Quicksort, Median, Order Statistic, Quickselect, Median of Medians',
-          'Thursday September 20',
-	  ['https://uva.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=51b730b1-971e-4857-9f44-a96101299a43&v=1',  'https://uva.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=d1cf83da-a39b-4824-b309-a9610108567a&v=1'],
-	  'http://www.cs.virginia.edu/~njb2b/cs4102/hub/slides/cs4102_L8_quickselectMedianofMedians.pdf',
-	  'http://www.cs.virginia.edu/~njb2b/cs4102/hub/slides/cs4102_L8_quickselectMedianofMedians.pptx',
-	  'Chapter 9, Medians and Order Statistics (all)' ,
-	[
-        new Weblink('https://www.ics.uci.edu/~eppstein/161/960125.html', 'Quickselect'),
-	new Weblink('https://www.ics.uci.edu/~eppstein/161/960130.html', 'Median of Medians')
-	]
-	),
-
-      new Lecture(
-          'Randomized Quicksort, Sorting Lower Bound',
-	  'Divide and Conquer, Sorting, Quicksort, Decision Tree, Worse Case Lower Bound',
-          'Tuesday September 25',
-	  ['https://uva.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=0ca91657-4a50-47bc-9acd-a9660128813f&v=1', 'None'],
-	  'http://www.cs.virginia.edu/~njb2b/cs4102/hub/slides/cs4102_L9_randquicksort.pdf',
-	  'http://www.cs.virginia.edu/~njb2b/cs4102/hub/slides/cs4102_L9_randquicksort.pptx',
-	  'Chapter 7, Quicksort (7.3 A randomized version of quicksort, 7.4 Analysis of quicksort); Chapter 8, Sorting in Linear Time (8.1 Lower bounds for sorting)' ,
-	  'None'
-	),
-
-//ENDENDEND
+new Lecture(
+'Welcome', 
+'None', 
+'Tuesday August 28', 
+['https://uva.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=5e4bffbd-f5d0-446f-8cf3-a94a0128d1b6', 
+'https://uva.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=7567b2f3-860f-439e-9244-a94a00ddbabf'], 
+'http://www.cs.virginia.edu/~njb2b/cs4102/hub/slides/cs4102_L1_intro.pdf', 
+'http://www.cs.virginia.edu/~njb2b/cs4102/hub/slides/cs4102_L1_intro.pptx', 
+'None', 
+'None'
+), 
+new Lecture(
+'Divide and Conquer', 
+'Recurrences, Asymptotic Notation, Divide and Conquer, Trominos', 
+'Thursday August 30', 
+['https://uva.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=de828fd8-8eec-4c72-a653-a94c00de838f', 
+'https://uva.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=d54cb030-66ac-482d-b7e7-a94c0128698b'], 
+'http://www.cs.virginia.edu/~njb2b/cs4102/hub/slides/cs4102_L2_recurrences_DandC.pdf', 
+'http://www.cs.virginia.edu/~njb2b/cs4102/hub/slides/cs4102_L2_recurrences_DandC.pptx', 
+'Chapter 3, Growth of Functions (All); Chapter 4, Divide-and-Conquer (Intro)', 
+'None'
+), 
+new Lecture(
+'Karatsuba & Tree Method', 
+'Divide and Conquer, Recurrences, Merge Sort, Karatsuba, Tree Method', 
+'Tuesday September 4', 
+['https://uva.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=932d99e3-b784-4dbf-acf7-a95101286b2d', 
+'https://uva.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=1fe30f60-384d-43ea-a893-a95100de8789'], 
+'http://www.cs.virginia.edu/~njb2b/cs4102/hub/slides/cs4102_L3_karatsuba_G&C.pdf', 
+'http://www.cs.virginia.edu/~njb2b/cs4102/hub/slides/cs4102_L3_karatsuba_G&C.pptx', 
+'Chapter 4, Divide-and-Conquer (4.4 The recursion-tree method for solving recurrences)', 
+'None'
+), 
+new Lecture(
+'Guess and Check', 
+'Karatsuba, Guess and Check Method, Induction', 
+'Thursday September 6', 
+['https://uva.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=88d5ff85-f412-48be-a9b7-a95301286766', 
+'https://uva.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=dc06d489-ba7d-4349-80bd-a95300df8dd2'], 
+'http://www.cs.virginia.edu/~njb2b/cs4102/hub/slides/cs4102_L4_G&C_Master.pdf', 
+'http://www.cs.virginia.edu/~njb2b/cs4102/hub/slides/cs4102_L4_G&C_Master.pptx', 
+'Chapter 4, Divide and Conquer (4.3 The substitution method for solving recurrences)', 
+[
+ new Weblink('http://www.cs.virginia.edu/~njb2b/cs4102/hub/supplement/cs4102_recurrence_proofs.pdf', 'Recurrence Solutions'), 
+]
+), 
+new Lecture(
+'Master Theorem, Substitution', 
+'Recurrence Relations, Cookbook Method, Master Theorem, Subsitution Method', 
+'Tuesday September 11', 
+['https://uva.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=f21d6171-96e6-4431-b9df-a95801283cf7', 
+'https://uva.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=b2a00765-3712-4185-8c90-a961010848e0'], 
+'http://www.cs.virginia.edu/~njb2b/cs4102/hub/slides/cs4102_L5_Master.pdf', 
+'http://www.cs.virginia.edu/~njb2b/cs4102/hub/slides/cs4102_L5_Master.pptx', 
+'Chapter 4, Divide and Conquer (4.3 The substitution method for solving recurrences)', 
+'None'
+), 
+new Lecture(
+'Closest Pair of Points', 
+'Divide and Conquer, Closest Pair of Points', 
+'Thursday September 13', 
+['https://uva.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=46271d1f-3516-4fb2-8c81-a95a012812d3', 
+'None'], 
+'http://www.cs.virginia.edu/~njb2b/cs4102/hub/slides/cs4102_L6_sub_closestpair.pdf', 
+'http://www.cs.virginia.edu/~njb2b/cs4102/hub/slides/cs4102_L6_sub_closestpair.pptx', 
+'Chapter 33, Computational Geometry (33.4 Finding the closest pair of points)', 
+'None'
+), 
+new Lecture(
+'Strassen\'s Algorithm and Quicksort', 
+'Divide and Conquer, Matrix Multiplication, Strassen\'s Algorithm, Sorting, Quicksort', 
+'Tuesday September 18', 
+['https://uva.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=e6e280c6-00e8-4bbb-be90-a95f0128dc86', 
+'https://uva.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=057422ad-162e-4888-b240-a961010850d8'], 
+'http://www.cs.virginia.edu/~njb2b/cs4102/hub/slides/cs4102_L7_strassenquicksort.pdf', 
+'http://www.cs.virginia.edu/~njb2b/cs4102/hub/slides/cs4102_L7_strassenquicksort.pptx', 
+'Chapter 4, Divide-and-Conquer (4.2 Strassen\'s algorithm for matrix multiplication); Chapter 7, Quicksort (7.1 Description of Quicksort)', 
+'None'
+), 
+new Lecture(
+'Quickselect and Median-of-Medians', 
+'Divide and Conquer, Sorting, Quicksort, Median, Order Statistic, Quickselect, Median of Medians', 
+'Thursday September 20', 
+['https://uva.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=51b730b1-971e-4857-9f44-a96101299a43', 
+'https://uva.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=d1cf83da-a39b-4824-b309-a9610108567a'], 
+'http://www.cs.virginia.edu/~njb2b/cs4102/hub/slides/cs4102_L8_quickselectMedianofMedians.pdf', 
+'http://www.cs.virginia.edu/~njb2b/cs4102/hub/slides/cs4102_L8_quickselectMedianofMedians.pptx', 
+'Chapter 9, Medians and Order Statistics (all)', 
+[
+ new Weblink('https://www.ics.uci.edu/~eppstein/161/960125.html', 'Quickselect'), new Weblink('https://www.ics.uci.edu/~eppstein/161/960130.html', 'Median of Medians'), 
+]
+), 
+new Lecture(
+'Randomized Quicksort, Sorting Lower Bound', 
+'Divide and Conquer, Sorting, Quicksort, Decision Tree, Worse Case Lower Bound', 
+'Tuesday September 25', 
+['https://uva.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=0ca91657-4a50-47bc-9acd-a9660128813f', 
+'None'], 
+'http://www.cs.virginia.edu/~njb2b/cs4102/hub/slides/cs4102_L9_randquicksort.pdf', 
+'http://www.cs.virginia.edu/~njb2b/cs4102/hub/slides/cs4102_L9_randquicksort.pptx', 
+'Chapter 7, Quicksort (7.3 A randomized version of quicksort, 7.4 Analysis of quicksort); Chapter 8, Sorting in Linear Time (8.1 Lower bounds for sorting)', 
+'None'
+), 
+new Lecture(
+'Sorting Algorithms and Their Properties', 
+'Sorting, Quicksort, Sorting Algorithm Properties, Insertionsort, bubblesort, heapsort', 
+'Thursday September 28', 
+['None', 
+'None'], 
+'http://www.cs.virginia.edu/~njb2b/cs4102/hub/slides/cs4102_L10_variousSorts.pdf', 
+'http://www.cs.virginia.edu/~njb2b/cs4102/hub/slides/cs4102_L10_variousSorts.pptx', 
+'Part II Sorting and Order Statistics (Introduction); Chapter 6, Heapsort (all)', 
+'None'
+), 
+new Lecture(
+'Linear Time Sorting', 
+'TBA', 
+'Tuesday October 2', 
+['None', 
+'None'], 
+'None', 
+'None', 
+'TBA', 
+'None'
+), 
+new Lecture(
+'Dynamic Programming', 
+'TBA', 
+'Thursday October 4', 
+['None', 
+'None'], 
+'None', 
+'None', 
+'TBA', 
+'None'
+), 
+new Lecture(
+'Matrix Chain Multiplication, Longest Common Subsequence', 
+'TBA', 
+'Thursday October 11', 
+['None', 
+'None'], 
+'None', 
+'None', 
+'TBA', 
+'None'
+), 
+new Lecture(
+'Midterm Exam', 
+'TBA', 
+'Thursday October 16', 
+['None', 
+'None'], 
+'None', 
+'None', 
+'TBA', 
+'None'
+), 
+new Lecture(
+'Seam Carving', 
+'TBA', 
+'Thursday October 18', 
+['None', 
+'None'], 
+'None', 
+'None', 
+'TBA', 
+'None'
+), 
+new Lecture(
+'Gerrymandering', 
+'TBA', 
+'Tuesday October 23', 
+['None', 
+'None'], 
+'None', 
+'None', 
+'TBA', 
+'None'
+), 
+new Lecture(
+'Greedy Algorithms, Interval Scheduling', 
+'TBA', 
+'Thursday October 25', 
+['None', 
+'None'], 
+'None', 
+'None', 
+'TBA', 
+'None'
+), 
+new Lecture(
+'Huffman Coding', 
+'TBA', 
+'Thursday November 1', 
+['None', 
+'None'], 
+'None', 
+'None', 
+'TBA', 
+'None'
+), 
+new Lecture(
+'Graphs, Minimum Spanning Trees', 
+'TBA', 
+'Tuesday November 6', 
+['None', 
+'None'], 
+'None', 
+'None', 
+'TBA', 
+'None'
+), 
+new Lecture(
+'Disjkstra\'s Algorithm', 
+'TBA', 
+'Thursday November 8', 
+['None', 
+'None'], 
+'None', 
+'None', 
+'TBA', 
+'None'
+), 
+new Lecture(
+'Bellman-Ford', 
+'TBA', 
+'Tuesday November 13', 
+['None', 
+'None'], 
+'None', 
+'None', 
+'TBA', 
+'None'
+), 
+new Lecture(
+'Max Flow, Min Cut', 
+'TBA', 
+'Thursday November 15', 
+['None', 
+'None'], 
+'None', 
+'None', 
+'TBA', 
+'None'
+), 
+new Lecture(
+'TBA', 
+'TBA', 
+'Tuesday November 20', 
+['None', 
+'None'], 
+'None', 
+'None', 
+'TBA', 
+'None'
+), 
 
      ]
    },
@@ -246,198 +402,4 @@
 </body>
 
 </html>
-
-<!--
-
-      new Lecture(
-          'Randomized Quicksort, Sorting Lower Bound',
-	  't',
-          'Tuesday September 25',
-	  ['', '],
-	  '',
-	  '',
-	  '' ,
-	  'None'
-
-	),
-
-
-      new Lecture(
-          'Sorting Algorithms and Their Properties',
-	  '',
-          'Thursday September 28',
-	  ['', '],
-	  '',
-	  '',
-	  '' ,
-	  'None'
-
-	),
-
-
-      new Lecture(
-          'Linear Time Sorting',
-	  '',
-          'Tuesday October 2',
-	  ['', '],
-	  '',
-	  '',
-	  '' ,
-	  'None'
-
-	),
-
-
-      new Lecture(
-          'Dynamic Programming',
-	  '',
-          'Thursday October 4',
-	  ['', '],
-	  '',
-	  '',
-	  '' ,
-	  'None'
-
-	),
-
-
-      new Lecture(
-          'Matrix Chain Multiplication, Longest Common Subsequence',
-	  '',
-          'Thursday October 11',
-	  ['', '],
-	  '',
-	  '',
-	  '' ,
-	  'None'
-
-	),
-
-
-      new Lecture(
-          'Seam Carving',
-	  '',
-          'Thursday October 18',
-	  ['', '],
-	  '',
-	  '',
-	  '' ,
-	  'None'
-
-	),
-
-
-      new Lecture(
-          'Gerrymandering',
-	  '',
-          'Tuesday October 23',
-	  ['', '],
-	  '',
-	  '',
-	  '' ,
-	  'None'
-
-	),
-
-
-      new Lecture(
-          'Greedy Algorithms, Interval Scheduling',
-	  '',
-          'Thursday October 25',
-	  ['', '],
-	  '',
-	  '',
-	  '' ,
-	  'None'
-
-	),
-
-
-      new Lecture(
-          'Huffman Coding',
-	  '',
-          'Thursday November 1',
-	  ['', '],
-	  '',
-	  '',
-	  '' ,
-	  'None'
-
-	),
-
-
-      new Lecture(
-          'Graphs, Minimum Spanning Trees',
-	  '',
-          'Tuesday November 6',
-	  ['', '],
-	  '',
-	  '',
-	  '' ,
-	  'None'
-
-	),
-
-
-      new Lecture(
-          "Disjkstra's Algorithm",
-	  '',
-          'Thursday November 8',
-	  ['', '],
-	  '',
-	  '',
-	  '' ,
-	  'None'
-
-	),
-
-
-      new Lecture(
-          'Bellman-Ford',
-	  '',
-          'Tuesday November 13',
-	  ['', '],
-	  '',
-	  '',
-	  '' ,
-	  'None'
-
-	),
-
-
-      new Lecture(
-          'Max Flow, Min Cut',
-	  '',
-          'Thursday November 15',
-	  ['', '],
-	  '',
-	  '',
-	  '' ,
-	  'None'
-
-	),
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
--->
-
 

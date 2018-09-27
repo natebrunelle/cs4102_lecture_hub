@@ -4,6 +4,8 @@ lecture:
 	slides: cs4102_L1_intro
 	am_video: 7567b2f3-860f-439e-9244-a94a00ddbabf
 	pm_video: 5e4bffbd-f5d0-446f-8cf3-a94a0128d1b6
+	reading: None
+	keywords: None
 
 lecture:
 	title: Divide and Conquer
@@ -74,13 +76,11 @@ lecture:
 	weblink: Median of Medians
 		url: https://www.ics.uci.edu/~eppstein/161/960130.html
 
-
-
 lecture:
 	title: Randomized Quicksort, Sorting Lower Bound
 	keywords: Divide and Conquer, Sorting, Quicksort, Decision Tree, Worse Case Lower Bound
 	date: Tuesday September 25
-	slides: cs4102_L9_randquicksort.pdf
+	slides: cs4102_L9_randquicksort
 	reading: Chapter 7, Quicksort (7.3 A randomized version of quicksort, 7.4 Analysis of quicksort); Chapter 8, Sorting in Linear Time (8.1 Lower bounds for sorting)
 	pm_video: 0ca91657-4a50-47bc-9acd-a9660128813f
 
@@ -88,54 +88,56 @@ lecture:
 	title: Sorting Algorithms and Their Properties
 	date: Thursday September 28
 	keywords: Sorting, Quicksort, Sorting Algorithm Properties, Insertionsort, bubblesort, heapsort
-	reading: Chapter 8
+	reading: Part II Sorting and Order Statistics (Introduction); Chapter 6, Heapsort (all)
 	slides: cs4102_L10_variousSorts
 
 
-CURRENT
-###############
 
-
-lecture:
+lecture: 
 	title: Linear Time Sorting
 	date: Tuesday October 2
 
-lecture:
+
+lecture: 
 	title: Dynamic Programming
 	date: Thursday October 4
 
 
-lecture:
+lecture: 
 	title: Matrix Chain Multiplication, Longest Common Subsequence
 	date: Thursday October 11
 
-lecture:
+lecture: 
+	title: Midterm Exam
+	date: Thursday October 16
+
+lecture: 
 	title: Seam Carving
 	date: Thursday October 18
 
-lecture:
+lecture: 
 	title: Gerrymandering
 	date: Tuesday October 23
 
-lecture:
-	Greedy Algorithms, Interval Scheduling
+lecture: 
+	title: Greedy Algorithms, Interval Scheduling
 	date: Thursday October 25
 
-lecture:
+lecture: 
 	title: Huffman Coding
 	date: Thursday November 1
 
-lecture:
+lecture: 
 	title: Graphs, Minimum Spanning Trees
 	date: Tuesday November 6
 
-lecture:
+lecture: 
 	title: Disjkstra's Algorithm
 	date: Thursday November 8
 
 
 
-lecture:
+lecture: 
 	title: Bellman-Ford
 	date: Tuesday November 13
 
@@ -144,6 +146,13 @@ lecture:
 	title: Max Flow, Min Cut
 	date: Thursday November 15
 
+lecture: 
+	date: Tuesday November 20
 
 
+
+
+
+CURRENT
+###############
 
