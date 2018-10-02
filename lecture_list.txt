@@ -106,6 +106,9 @@ lecture:
 lecture: 
 	title: Linear Time Sorting
 	date: Tuesday October 2
+	slides: cs4102_L11_linearSorts_maxSubsetSum
+	keywords: Sorting, Linear Time Sorting, Counting Sort, Radix Sort, Maximum Sum Contiguous Subsequence
+	reading: Chapter 8, Sorting in Linear Time (8.2 Counting Sort, 8.3 Radix sort); Chapter 4, Divide-and-Conquer (4.1 The maximum-subarray problem)
 
 
 lecture: 
