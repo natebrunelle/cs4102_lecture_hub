@@ -86,10 +86,11 @@ lecture:
 
 lecture:
 	title: Sorting Algorithms and Their Properties
-	date: Thursday September 28
+	date: Thursday September 27
 	keywords: Sorting, Quicksort, Sorting Algorithm Properties, Insertionsort, Bubblesort, Heapsort
 	reading: Part II Sorting and Order Statistics (Introduction); Chapter 6, Heapsort (all)
 	slides: cs4102_L10_variousSorts
+	pm_video: ecee4c5d-7843-44b3-84f2-a9680128934f
 
 
 
