@@ -115,7 +115,9 @@ lecture:
 lecture: 
 	title: Dynamic Programming
 	date: Thursday October 4
-
+	slides: cs4102_L12_dynprog
+	keywords: Dynamic Programming, Fibonacci, Log Cutting
+	reading: Chapter 15, Dynamic Programming (Intro, 15.1 Rod cutting)
 
 lecture: 
 	title: Matrix Chain Multiplication, Longest Common Subsequence
