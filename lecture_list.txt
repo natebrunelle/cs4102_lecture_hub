@@ -125,7 +125,7 @@ lecture:
 
 lecture: 
 	title: Midterm Exam
-	date: Thursday October 16
+	date: Tuesday October 16
 
 lecture: 
 	title: Seam Carving
