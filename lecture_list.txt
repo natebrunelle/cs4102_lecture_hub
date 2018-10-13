@@ -131,6 +131,8 @@ lecture:
 lecture: 
 	title: Midterm Exam
 	date: Tuesday October 16
+	weblink: Practice Midterm
+		url: https://www.cs.virginia.edu/~njb2b/cs4102/hub/supplement/practicemidterm.pdf
 
 lecture: 
 	title: Seam Carving
