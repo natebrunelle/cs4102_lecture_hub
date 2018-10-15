@@ -83,6 +83,7 @@ lecture:
 	slides: cs4102_L9_randquicksort
 	reading: Chapter 7, Quicksort (7.3 A randomized version of quicksort, 7.4 Analysis of quicksort); Chapter 8, Sorting in Linear Time (8.1 Lower bounds for sorting)
 	pm_video: 0ca91657-4a50-47bc-9acd-a9660128813f
+	am_video: 8c61382e-e21c-485f-8918-a97a00face38
 
 lecture:
 	title: Sorting Algorithms and Their Properties
@@ -91,6 +92,7 @@ lecture:
 	reading: Part II Sorting and Order Statistics (Introduction); Chapter 6, Heapsort (all)
 	slides: cs4102_L10_variousSorts
 	pm_video: ecee4c5d-7843-44b3-84f2-a9680128934f
+	am_video: d1b3ba4b-7e83-4766-8bc8-a97a00fad1ea
 
 
 
@@ -111,6 +113,7 @@ lecture:
 	keywords: Sorting, Linear Time Sorting, Counting Sort, Radix Sort, Maximum Sum Contiguous Subsequence
 	reading: Chapter 8, Sorting in Linear Time (8.2 Counting Sort, 8.3 Radix sort); Chapter 4, Divide-and-Conquer (4.1 The maximum-subarray problem)
 	pm_video: ccbec42a-f3d1-42bb-b00d-a96d0128a194
+	am_video: 952e48f7-e066-476e-85ce-a97a00fad565
 
 
 lecture: 
@@ -120,6 +123,7 @@ lecture:
 	keywords: Dynamic Programming, Fibonacci, Log Cutting
 	reading: Chapter 15, Dynamic Programming (Intro, 15.1 Rod cutting)
 	pm_video: 0687071f-674f-433a-b7c9-a96f012882b6
+	am_video: 9e33120b-3c6d-498b-84d3-a97a00fad997
 
 lecture: 
 	title: Matrix Chain Multiplication, Longest Common Subsequence
@@ -127,6 +131,7 @@ lecture:
 	slides: cs4102_L13_matrixChainLCS
 	keywords: Dynamic Programming, Matrix Chain Multiplication, Longest Common Subsequence
 	reading: Chapter 15, Dynamic Programming (15.2 Matrix-chain multiplication, 15.4 Longest common subsequence)
+	am_video: e632415c-5f17-41e4-904a-a97a00fadf32
 
 lecture: 
 	title: Midterm Exam
