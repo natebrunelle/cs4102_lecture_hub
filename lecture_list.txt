@@ -132,6 +132,7 @@ lecture:
 	keywords: Dynamic Programming, Matrix Chain Multiplication, Longest Common Subsequence
 	reading: Chapter 15, Dynamic Programming (15.2 Matrix-chain multiplication)
 	am_video: e632415c-5f17-41e4-904a-a97a00fadf32
+	pm_video: 658a3137-3ee7-4ee3-aaec-a9760128b26b
 
 lecture: 
 	title: Midterm Exam
