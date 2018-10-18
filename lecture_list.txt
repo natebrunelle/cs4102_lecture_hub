@@ -126,11 +126,11 @@ lecture:
 	am_video: 9e33120b-3c6d-498b-84d3-a97a00fad997
 
 lecture: 
-	title: Matrix Chain Multiplication, Longest Common Subsequence
+	title: Matrix Chain Multiplication
 	date: Thursday October 11
 	slides: cs4102_L13_matrixChainLCS
 	keywords: Dynamic Programming, Matrix Chain Multiplication, Longest Common Subsequence
-	reading: Chapter 15, Dynamic Programming (15.2 Matrix-chain multiplication, 15.4 Longest common subsequence)
+	reading: Chapter 15, Dynamic Programming (15.2 Matrix-chain multiplication)
 	am_video: e632415c-5f17-41e4-904a-a97a00fadf32
 
 lecture: 
@@ -141,8 +141,16 @@ lecture:
 	pm_video: 62b255ec-6a3c-4264-828f-a979018343c4
 
 lecture: 
-	title: Seam Carving
+	title: Longest Common Subsequence, Seam Carving
 	date: Thursday October 18
+	keywords: Dynamic Programming, Seam Carving, Longest Common Subsequence
+	reading: Chapter 15, Dynamic Programming (15.4 Longest common subsequence)
+	weblink: Seam Carving
+		url: https://en.wikipedia.org/wiki/Seam_carving
+	weblink: A Seam Carver
+		url: http://rsizr.com/
+	weblink: "The Slicer"
+		url: https://en.wikipedia.org/wiki/The_Slicer
 
 lecture: 
 	title: Gerrymandering
