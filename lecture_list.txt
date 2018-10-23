@@ -154,8 +154,10 @@ lecture:
 		url: https://en.wikipedia.org/wiki/The_Slicer
 
 lecture: 
-	title: Gerrymandering
+	title: Exam Review and Fun Problems
 	date: Tuesday October 23
+	weblink: Exam Statistics
+		url: https://docs.google.com/spreadsheets/d/19z-6FeuJecluXw6--h5gwBFuqyzuzZlkHegyWUd3zz4/edit?usp=sharing
 
 lecture: 
 	title: Greedy Algorithms, Interval Scheduling
