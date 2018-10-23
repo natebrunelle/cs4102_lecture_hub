@@ -152,6 +152,7 @@ lecture:
 		url: http://rsizr.com/
 	weblink: "The Slicer"
 		url: https://en.wikipedia.org/wiki/The_Slicer
+	pm_video: 47271cad-d761-46fd-9215-a97d01285341
 
 lecture: 
 	title: Exam Review and Fun Problems
