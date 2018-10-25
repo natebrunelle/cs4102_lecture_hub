@@ -168,6 +168,7 @@ lecture:
 	date: Thursday October 25
 	keywords: Dynamic Programming, Total World Domination
 	slides: cs4102_L16_gerrymander
+	reading: Does Not Appear
 
 lecture: 
 	title: Greedy Algorithms, Interval Scheduling
