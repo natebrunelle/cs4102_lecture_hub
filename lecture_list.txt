@@ -160,32 +160,36 @@ lecture:
 	date: Tuesday October 23
 	weblink: Exam Statistics
 		url: https://docs.google.com/spreadsheets/d/19z-6FeuJecluXw6--h5gwBFuqyzuzZlkHegyWUd3zz4/edit?usp=sharing
+	pm_video: 36b0e041-32de-4ab8-82f7-a98201284e40
+	slides: cs4102_L15_examrecap_fun
+
+lecture: 
+	title: Gerrymandering
+	date: Thursday October 25
+	keywords: Dynamic Programming, Total World Domination
+	slides: cs4102_L16_gerrymander
 
 lecture: 
 	title: Greedy Algorithms, Interval Scheduling
-	date: Thursday October 25
-
-lecture: 
-	title: Huffman Coding
 	date: Thursday November 1
 
 lecture: 
-	title: Graphs, Minimum Spanning Trees
+	title: Huffman Coding
 	date: Tuesday November 6
 
 lecture: 
-	title: Disjkstra's Algorithm
+	title: Graphs, Minimum Spanning Trees
 	date: Thursday November 8
 
 lecture: 
-	title: Bellman-Ford
+	title: Disjkstra's Algorithm
 	date: Tuesday November 13
 
 lecture: 
-	title: Max Flow, Min Cut
+	title: Bellman-Ford
 	date: Thursday November 15
 
-lecture: 
+lecture: Max Flow, Min Cut
 	date: Tuesday November 20
 
 
