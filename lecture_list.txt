@@ -173,26 +173,29 @@ lecture:
 
 lecture: 
 	title: Greedy Algorithms, Interval Scheduling
-	date: Thursday November 1
+	date: Tuesday October 30
+	keywords: Greedy Algorithms, Interval Scheduling, Exchange Arguments, Choice Function, Change Making, 
+	slides: cs4102_L17_greedyCoinIntervals
+	reading: Chapter 16, Greedy Algorithms (16.1 An activity-selection problem, 16.2 Elements of the greedy strategy)
 
 lecture: 
 	title: Huffman Coding
-	date: Tuesday November 6
+	date: Thursday November 1
 
 lecture: 
 	title: Graphs, Minimum Spanning Trees
-	date: Thursday November 8
+	date: Tuesday November 6
 
 lecture: 
 	title: Disjkstra's Algorithm
-	date: Tuesday November 13
+	date: Thursday November 8
 
 lecture: 
 	title: Bellman-Ford
-	date: Thursday November 15
+	date: Tuesday November 13
 
 lecture: Max Flow, Min Cut
-	date: Tuesday November 20
+	date: Thursday November 18
 
 
 
