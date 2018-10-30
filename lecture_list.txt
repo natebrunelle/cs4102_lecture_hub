@@ -177,7 +177,7 @@ lecture:
 	keywords: Greedy Algorithms, Interval Scheduling, Exchange Arguments, Choice Function, Change Making, 
 	slides: cs4102_L17_greedyCoinIntervals
 	reading: Chapter 16, Greedy Algorithms (16.1 An activity-selection problem, 16.2 Elements of the greedy strategy)
-	pm_video: https://uva.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=6d6e6993-f92a-4efb-8eb6-a9890128a625
+	pm_video: 6d6e6993-f92a-4efb-8eb6-a9890128a625
 
 lecture: 
 	title: Huffman Coding
