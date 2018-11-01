@@ -187,7 +187,7 @@ lecture:
 	reading: Chapter 16, Greedy Algorithms (16.3 Huffman codes)
 
 lecture:
-	title: Cache Eviction
+	title: Belady Cache Replacement
 	date: Tuesday November 6
 
 lecture: 
