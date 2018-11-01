@@ -182,21 +182,29 @@ lecture:
 lecture: 
 	title: Huffman Coding
 	date: Thursday November 1
+	keywords: Greedy Algorithms, Huffman Coding, Exchange Arguments, Choice Function
+	slides: cs4102_L18_greedyHuffman
+	reading: Chapter 16, Greedy Algorithms (16.3 Huffman codes)
 
-lecture: 
-	title: Graphs, Minimum Spanning Trees
+lecture:
+	title: Cache Eviction
 	date: Tuesday November 6
 
 lecture: 
-	title: Disjkstra's Algorithm
+	title: Graphs, Minimum Spanning Trees
 	date: Thursday November 8
 
 lecture: 
-	title: Bellman-Ford
+	title: Disjkstra's Algorithm
 	date: Tuesday November 13
 
-lecture: Max Flow, Min Cut
+
+lecture: 
+	title: Bellman-Ford
 	date: Thursday November 18
+
+lecture: Max Flow, Min Cut
+
 
 
 
