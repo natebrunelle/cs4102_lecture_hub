@@ -185,6 +185,7 @@ lecture:
 	keywords: Greedy Algorithms, Huffman Coding, Exchange Arguments, Choice Function
 	slides: cs4102_L18_greedyHuffman
 	reading: Chapter 16, Greedy Algorithms (16.3 Huffman codes)
+	pm_video: dfc79df7-1f0a-44c2-805a-a98b0128b259
 
 lecture:
 	title: Belady Cache Replacement
