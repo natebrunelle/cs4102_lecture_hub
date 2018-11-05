@@ -1,0 +1,3 @@
+cd public_html/cs4102/hub
+./pull.sh
+exit

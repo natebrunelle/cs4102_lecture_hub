@@ -2,8 +2,10 @@ lecture:
 	title: Welcome
 	date: Tuesday August 28
 	slides: cs4102_L1_intro
-	am_video: 7567b2f3-860f-439e-9244-a94a00ddbabf&v=1
-	pm_video: 5e4bffbd-f5d0-446f-8cf3-a94a0128d1b6&v=1
+	am_video: 7567b2f3-860f-439e-9244-a94a00ddbabf
+	pm_video: 5e4bffbd-f5d0-446f-8cf3-a94a0128d1b6
+	reading: None
+	keywords: None
 
 lecture:
 	title: Divide and Conquer
@@ -11,8 +13,8 @@ lecture:
 	reading: Chapter 3, Growth of Functions (All); Chapter 4, Divide-and-Conquer (Intro)
 	keywords: Recurrences, Asymptotic Notation, Divide and Conquer, Trominos
 	slides: cs4102_L2_recurrences_DandC
-	am_video: d54cb030-66ac-482d-b7e7-a94c0128698b&v=1
-	pm_video: de828fd8-8eec-4c72-a653-a94c00de838f&v=1
+	am_video: d54cb030-66ac-482d-b7e7-a94c0128698b
+	pm_video: de828fd8-8eec-4c72-a653-a94c00de838f
 
 lecture:
 	title: Karatsuba & Tree Method
@@ -20,8 +22,8 @@ lecture:
 	reading: Chapter 4, Divide-and-Conquer (4.4 The recursion-tree method for solving recurrences)
 	keywords: Divide and Conquer, Recurrences, Merge Sort, Karatsuba, Tree Method
 	slides: cs4102_L3_karatsuba_G&C
-	pm_video: 932d99e3-b784-4dbf-acf7-a95101286b2d&v=1
-	am_video: 1fe30f60-384d-43ea-a893-a95100de8789&v=1
+	pm_video: 932d99e3-b784-4dbf-acf7-a95101286b2d
+	am_video: 1fe30f60-384d-43ea-a893-a95100de8789
 
 lecture:
 	title: Guess and Check
@@ -29,8 +31,8 @@ lecture:
 	reading: Chapter 4, Divide and Conquer (4.3 The substitution method for solving recurrences)
 	keywords: Karatsuba, Guess and Check Method, Induction
 	slides: cs4102_L4_G&C_Master
-	pm_video: 88d5ff85-f412-48be-a9b7-a95301286766&v=1
-	am_video: dc06d489-ba7d-4349-80bd-a95300df8dd2&v=1
+	pm_video: 88d5ff85-f412-48be-a9b7-a95301286766
+	am_video: dc06d489-ba7d-4349-80bd-a95300df8dd2
 	weblink: Recurrence Solutions
 		url: http://www.cs.virginia.edu/~njb2b/cs4102/hub/supplement/cs4102_recurrence_proofs.pdf
 
@@ -40,14 +42,14 @@ lecture:
 	reading: Chapter 4, Divide and Conquer (4.3 The substitution method for solving recurrences)
 	keywords: Recurrence Relations, Cookbook Method, Master Theorem, Subsitution Method
 	slides: cs4102_L5_Master
-	pm_video: f21d6171-96e6-4431-b9df-a95801283cf7&v=1
-	am_video: b2a00765-3712-4185-8c90-a961010848e0&v=1
+	pm_video: f21d6171-96e6-4431-b9df-a95801283cf7
+	am_video: b2a00765-3712-4185-8c90-a961010848e0
 
 lecture:
 	title: Closest Pair of Points
 	keywords: Divide and Conquer, Closest Pair of Points
 	date: Thursday September 13
-	pm_video: 46271d1f-3516-4fb2-8c81-a95a012812d3&v=1
+	pm_video: 46271d1f-3516-4fb2-8c81-a95a012812d3
 	slides: cs4102_L6_sub_closestpair
 	reading: Chapter 33, Computational Geometry (33.4 Finding the closest pair of points)
 
@@ -55,8 +57,8 @@ lecture:
 	title: Strassen's Algorithm and Quicksort
 	keywords: Divide and Conquer, Matrix Multiplication, Strassen's Algorithm, Sorting, Quicksort
 	date: Tuesday September 18
-	pm_video: e6e280c6-00e8-4bbb-be90-a95f0128dc86&v=1
-	am_video: 057422ad-162e-4888-b240-a961010850d8&v=1
+	pm_video: e6e280c6-00e8-4bbb-be90-a95f0128dc86
+	am_video: 057422ad-162e-4888-b240-a961010850d8
 	slides: cs4102_L7_strassenquicksort
 	reading: Chapter 4, Divide-and-Conquer (4.2 Strassen's algorithm for matrix multiplication); Chapter 7, Quicksort (7.1 Description of Quicksort)
 
@@ -65,8 +67,8 @@ lecture:
 	title: Quickselect and Median-of-Medians
 	keywords: Divide and Conquer, Sorting, Quicksort, Median, Order Statistic, Quickselect, Median of Medians
 	date: Thursday September 20
-	pm_video: 51b730b1-971e-4857-9f44-a96101299a43&v=1
-	am_video: d1cf83da-a39b-4824-b309-a9610108567a&v=1
+	pm_video: 51b730b1-971e-4857-9f44-a96101299a43
+	am_video: d1cf83da-a39b-4824-b309-a9610108567a
 	slides: cs4102_L8_quickselectMedianofMedians
 	reading: Chapter 9, Medians and Order Statistics (all)
 	weblink: Quickselect
@@ -74,73 +76,141 @@ lecture:
 	weblink: Median of Medians
 		url: https://www.ics.uci.edu/~eppstein/161/960130.html
 
-
-
 lecture:
 	title: Randomized Quicksort, Sorting Lower Bound
 	keywords: Divide and Conquer, Sorting, Quicksort, Decision Tree, Worse Case Lower Bound
 	date: Tuesday September 25
-	slides: cs4102_L9_randquicksort.pdf
+	slides: cs4102_L9_randquicksort
 	reading: Chapter 7, Quicksort (7.3 A randomized version of quicksort, 7.4 Analysis of quicksort); Chapter 8, Sorting in Linear Time (8.1 Lower bounds for sorting)
 	pm_video: 0ca91657-4a50-47bc-9acd-a9660128813f
-
-CURRENT
-###############
-
+	am_video: 8c61382e-e21c-485f-8918-a97a00face38
 
 lecture:
 	title: Sorting Algorithms and Their Properties
-	date: Thursday September 28
+	date: Thursday September 27
+	keywords: Sorting, Quicksort, Sorting Algorithm Properties, Insertionsort, Bubblesort, Heapsort
+	reading: Part II Sorting and Order Statistics (Introduction); Chapter 6, Heapsort (all)
+	slides: cs4102_L10_variousSorts
+	pm_video: ecee4c5d-7843-44b3-84f2-a9680128934f
+	am_video: d1b3ba4b-7e83-4766-8bc8-a97a00fad1ea
 
 
-lecture:
+
+
+
+
+
+
+
+
+
+
+
+lecture: 
 	title: Linear Time Sorting
 	date: Tuesday October 2
+	slides: cs4102_L11_linearSorts_maxSubsetSum
+	keywords: Sorting, Linear Time Sorting, Counting Sort, Radix Sort, Maximum Sum Contiguous Subsequence
+	reading: Chapter 8, Sorting in Linear Time (8.2 Counting Sort, 8.3 Radix sort); Chapter 4, Divide-and-Conquer (4.1 The maximum-subarray problem)
+	pm_video: ccbec42a-f3d1-42bb-b00d-a96d0128a194
+	am_video: 952e48f7-e066-476e-85ce-a97a00fad565
 
-lecture:
+
+lecture: 
 	title: Dynamic Programming
 	date: Thursday October 4
+	slides: cs4102_L12_dynprog
+	keywords: Dynamic Programming, Fibonacci, Log Cutting
+	reading: Chapter 15, Dynamic Programming (Intro, 15.1 Rod cutting)
+	pm_video: 0687071f-674f-433a-b7c9-a96f012882b6
+	am_video: 9e33120b-3c6d-498b-84d3-a97a00fad997
 
-
-lecture:
-	title: Matrix Chain Multiplication, Longest Common Subsequence
+lecture: 
+	title: Matrix Chain Multiplication
 	date: Thursday October 11
+	slides: cs4102_L13_matrixChainLCS
+	keywords: Dynamic Programming, Matrix Chain Multiplication, Longest Common Subsequence
+	reading: Chapter 15, Dynamic Programming (15.2 Matrix-chain multiplication)
+	am_video: e632415c-5f17-41e4-904a-a97a00fadf32
+	pm_video: 658a3137-3ee7-4ee3-aaec-a9760128b26b
 
-lecture:
-	title: Seam Carving
+lecture: 
+	title: Midterm Exam
+	date: Tuesday October 16
+	weblink: Practice Midterm
+		url: https://www.cs.virginia.edu/~njb2b/cs4102/hub/supplement/practicemidterm.pdf
+	pm_video: 62b255ec-6a3c-4264-828f-a979018343c4
+
+lecture: 
+	title: Longest Common Subsequence, Seam Carving
 	date: Thursday October 18
+	keywords: Dynamic Programming, Seam Carving, Longest Common Subsequence
+	reading: Chapter 15, Dynamic Programming (15.4 Longest common subsequence)
+	weblink: Seam Carving
+		url: https://en.wikipedia.org/wiki/Seam_carving
+	weblink: A Seam Carver
+		url: http://rsizr.com/
+	weblink: "The Slicer"
+		url: https://en.wikipedia.org/wiki/The_Slicer
+	pm_video: 47271cad-d761-46fd-9215-a97d01285341
+	slides: cs4102_L14_LCSSeamCarve
 
-lecture:
-	title: Gerrymandering
+lecture: 
+	title: Exam Review and Fun Problems
 	date: Tuesday October 23
+	weblink: Exam Statistics
+		url: https://docs.google.com/spreadsheets/d/19z-6FeuJecluXw6--h5gwBFuqyzuzZlkHegyWUd3zz4/edit?usp=sharing
+	pm_video: 36b0e041-32de-4ab8-82f7-a98201284e40
+	slides: cs4102_L15_examrecap_fun
 
-lecture:
-	Greedy Algorithms, Interval Scheduling
+lecture: 
+	title: Gerrymandering
 	date: Thursday October 25
+	keywords: Dynamic Programming, Total World Domination
+	slides: cs4102_L16_gerrymander
+	pm_video: e91d05e2-80e7-4fec-8a82-a9840128b585
+	reading: Does Not Appear
 
-lecture:
+lecture: 
+	title: Greedy Algorithms, Interval Scheduling
+	date: Tuesday October 30
+	keywords: Greedy Algorithms, Interval Scheduling, Exchange Arguments, Choice Function, Change Making, 
+	slides: cs4102_L17_greedyCoinIntervals
+	reading: Chapter 16, Greedy Algorithms (16.1 An activity-selection problem, 16.2 Elements of the greedy strategy)
+	pm_video: 6d6e6993-f92a-4efb-8eb6-a9890128a625
+
+lecture: 
 	title: Huffman Coding
 	date: Thursday November 1
+	keywords: Greedy Algorithms, Huffman Coding, Exchange Arguments, Choice Function
+	slides: cs4102_L18_greedyHuffman
+	reading: Chapter 16, Greedy Algorithms (16.3 Huffman codes)
+	pm_video: dfc79df7-1f0a-44c2-805a-a98b0128b259
 
 lecture:
-	title: Graphs, Minimum Spanning Trees
+	title: Belady Cache Replacement
 	date: Tuesday November 6
 
-lecture:
-	title: Disjkstra's Algorithm
+lecture: 
+	title: Graphs, Minimum Spanning Trees
 	date: Thursday November 8
 
-
-
-lecture:
-	title: Bellman-Ford
+lecture: 
+	title: Disjkstra's Algorithm
 	date: Tuesday November 13
 
 
 lecture: 
-	title: Max Flow, Min Cut
-	date: Thursday November 15
+	title: Bellman-Ford
+	date: Thursday November 18
+
+lecture: Max Flow, Min Cut
 
 
 
+
+
+
+CURRENT
+###############
 
