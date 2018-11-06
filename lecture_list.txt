@@ -190,6 +190,11 @@ lecture:
 lecture:
 	title: Belady Cache Replacement
 	date: Tuesday November 6
+	keywords: Greedy Algorithms, Cache Replacement, Cached Eviction, Hardware and Algorithms
+	slides: cs4102_L19_greedyCache
+	reading: Does Not Appear
+	weblink: Other Eviction Policies
+	    url: https://en.wikipedia.org/wiki/Cache_replacement_policies
 
 lecture: 
 	title: Graphs, Minimum Spanning Trees
