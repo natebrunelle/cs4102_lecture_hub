@@ -193,7 +193,7 @@ lecture:
 	keywords: Greedy Algorithms, Cache Replacement, Cached Eviction, Hardware and Algorithms
 	slides: cs4102_L19_greedyCache
 	reading: Does Not Appear
-	weblink: Other Eviction Policies
+	weblink: Other Replacement Policies
 	    url: https://en.wikipedia.org/wiki/Cache_replacement_policies
 
 lecture: 
