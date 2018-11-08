@@ -195,10 +195,14 @@ lecture:
 	reading: Does Not Appear
 	weblink: Other Replacement Policies
 	    url: https://en.wikipedia.org/wiki/Cache_replacement_policies
+	pm_video: a8b32909-497d-4f77-bc1e-a99001390c29
 
 lecture: 
 	title: Graphs, Minimum Spanning Trees
 	date: Thursday November 8
+	slides: cs4102_L20_mst
+	keywords: Greedy Algorithms, Graphs, Minimum Spanning Trees, Exchange Argument, Prim's Algorithm, Kruskal's Algorithm, Cut Theorem, Cut Property
+	reading: Chapter 23, Minimum Spanning Trees (all)
 
 lecture: 
 	title: Disjkstra's Algorithm
