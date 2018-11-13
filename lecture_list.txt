@@ -211,6 +211,7 @@ lecture:
 	keywords: Greedy Algorithms, Graphs, Single-source Shortest paths, Dijkstra's algorithm
 	reading: Chapter 24, Single-Source Shortest Paths (24.3 Dijkstra's algorithm)
 	slides: cs4102_L21_shortestPath
+	pm_video: a08490d9-234b-4f2c-93c6-a99701390f3f
 
 
 lecture: 
