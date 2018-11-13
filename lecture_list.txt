@@ -203,6 +203,7 @@ lecture:
 	slides: cs4102_L20_mst
 	keywords: Greedy Algorithms, Graphs, Minimum Spanning Trees, Exchange Argument, Prim's Algorithm, Kruskal's Algorithm, Cut Theorem, Cut Property
 	reading: Chapter 23, Minimum Spanning Trees (all)
+    pm_video: 7d092ea9-6c95-4ad7-a56e-a9920139297c
 
 lecture: 
 	title: Disjkstra's Algorithm
