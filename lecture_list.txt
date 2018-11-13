@@ -208,6 +208,9 @@ lecture:
 lecture: 
 	title: Disjkstra's Algorithm
 	date: Tuesday November 13
+	keywords: Greedy Algorithms, Graphs, Single-source Shortest paths, Dijkstra's algorithm
+	reading: Chapter 24, Single-Source Shortest Paths (24.3 Dijkstra's algorithm)
+	slides: cs4102_L21_shortestPath
 
 
 lecture: 
