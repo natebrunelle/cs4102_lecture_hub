@@ -217,8 +217,12 @@ lecture:
 lecture: 
 	title: Bellman-Ford
 	date: Thursday November 18
+	keywords: Dynamic Programming, Graphs, Single-source Shortest paths, Bellman-Ford Algorithm, Money Pumps
+	slides: cs4102_L22_BellmanFord
+	reading: Chapter 24, Single-Source Shortest Paths (24.1 The Bellman-Ford algorithm)
 
-lecture: Max Flow, Min Cut
+lecture: 
+    title: Max Flow, Min Cut
 
 
 
