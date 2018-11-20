@@ -220,6 +220,7 @@ lecture:
 	keywords: Dynamic Programming, Graphs, Single-source Shortest paths, Bellman-Ford Algorithm, Money Pumps, All pairs shortest paths, Floyd-Warshall
 	slides: cs4102_L22_BellmanFord
 	reading: Chapter 24, Single-Source Shortest Paths (24.1 The Bellman-Ford algorithm)
+	pm_video: 8e1dd7f7-2591-46d5-967e-a99901391966
 
 lecture: 
     title: Max Flow, Min Cut
@@ -227,7 +228,6 @@ lecture:
     reading: Chapter 26, Maximum Flow (26.1 Flow networks, 26.2 The Ford-Fulkerson method)
     keywords: Flow Networks, Maximum Flow, Minimum Cut, Residual Graph, Augmenting Path
 	slides: cs4102_L23_maxflow
-	pm_video: 8e1dd7f7-2591-46d5-967e-a99901391966
 
 
 
