@@ -231,8 +231,9 @@ lecture:
 	pm_video: d2187842-38c1-4a67-8c61-a99e0139311d
 	
 lecture:
-    title: Reductions
+    title: Bipartite Matching, Reductions
     date: Tuesday November 27
+    slides: cs4102_L24_Bipartite_Reductions
 
 
 
