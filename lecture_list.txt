@@ -234,6 +234,7 @@ lecture:
     title: Bipartite Matching, Reductions
     date: Tuesday November 27
     slides: cs4102_L24_Bipartite_Reductions
+    keywords: Bipartite Matching, Reductions, Edge-Disjoint Paths, Vertex-Disjoint Paths, Maximum Flow
 
 
 
