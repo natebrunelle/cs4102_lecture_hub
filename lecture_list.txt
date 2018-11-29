@@ -240,7 +240,8 @@ lecture:
 lecture:
     title: Reductions, NP-Completeness
     date: Thursday November 29
-
+    slides: cs4102_L25_Reductions_NPC
+    keywords: Reductions, Vertex Cover, Independent Set, NP-Completeness
 
 
 
