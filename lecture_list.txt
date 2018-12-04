@@ -253,7 +253,7 @@ lecture:
     keywords: Reductions, Vertex Cover, Independent Set, 3-SAT, Clique, NP-Completeness, Cookies
     reading: Chapter 34, NP-Completeness (all)
     weblink: Recipe
-		url: http://www.cs.virginia.edu/~njb2b/cs4102/hub/supplement/cs4102_L26_recipe.pdf
+		url: http://www.cs.virginia.edu/~njb2b/cs4102/hub/supplement/cs4102_L26_Recipe.pdf
 
 
 
