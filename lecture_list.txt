@@ -254,6 +254,17 @@ lecture:
     reading: Chapter 34, NP-Completeness (all)
     weblink: Recipe
 		url: http://www.cs.virginia.edu/~njb2b/cs4102/hub/supplement/cs4102_L26_Recipe.pdf
+		
+lecture:
+    title: Finale
+    date: Thursday December 6
+    reading: None
+    
+lecture:
+    title: Final Exam
+    date: Monday December 10 at 2pm (9:30am section) OR Monday December 17 at 9am (2pm section)
+    weblink: Spring 2018 Final
+        url: http://www.cs.virginia.edu/~njb2b/cs4102/hub/supplement/CS4102_final_s18.pdf
 
 
 
