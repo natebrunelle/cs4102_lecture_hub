@@ -259,6 +259,7 @@ lecture:
     title: Finale
     date: Thursday December 6
     reading: None
+    slides: cs4102_L26_Finale
     
 lecture:
     title: Final Exam
